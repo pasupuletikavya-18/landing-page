@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .hero {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+        
+        .btn {
+            background: #00c6ff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #0072ff;
+        }
+        
+        .products {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            animation: slideUp 1s ease-in-out;
+        }
+        
+        .product:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #141e30;
+            color: white;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <h1>ElectroShop</h1>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>Latest Electronics at Best Prices</h2>
+            <p>Shop the latest gadgets, smartphones, and accessories.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </header>
+    <section id="products" class="products">
+        <h2>Our Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="download (1).jpg" alt="Laptop">
+                <h3>Latest Laptop</h3>
+                <p>High-performance laptop for professionals.</p>
+            </div>
+            <div class="product">
+                <img src="download.jpg"alt="smartphone">
+                <h3>Electronic Households</h3>
+                <p>Fast and powerful  with amazing Durability.</p>
+            </div>
+            <div class="product">
+                <img src="images.jpg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Experience music like never before.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>ElectroShop is committed to providing the latest and greatest in electronics. From cutting-edge smartphones to high-performance laptops, we ensure quality and affordability.</p>
+            <p>Our mission is to bring you the best gadgets at unbeatable prices with excellent customer service.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <p>Email: support@electroshop.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ElectroShop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
